@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jsb/jq/jquery-3.4.1.min.js"></script>
+		<script src="jsb/jq/jquery-ui-1.12.0.custom/jquery-ui.min.js"></script>
+		<script src="jsb/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="jsb/jq/jquery-ui-1.12.0.custom/jquery-ui.min.css"/>
+		<link rel="stylesheet" href="jsb/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="jsb/css/bootstrap-datetimepicker.min.css"/>
+		<link rel="stylesheet" href="css/suggestion.css"/>
+		<script src="jsb/js/bootstrap-datetimepicker.min.js"></script>
+		<script src="js/user.js"></script>
+		<script src="js/suggestion.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<!-- 导航栏 -->
+			<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"> 
+				<div class="container-fluid">
+					<div class="row">
+						<div class="navbar-header col-md-2 col-md-offset-1">
+							<div class="row">
+								<div class="col-md-4 ">
+									<img src="images/loge.png" class="img-responsive loge" alt="Cinque Terre"/>
+								</div>
+								<div class="col-md-8">
+									<a class="navbar-brand" href="#">健身教程</a> 
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html">首页</a></li>
+								<li><a href="../FoodAndSportUtils/l2.html">健身计划</a></li>
+								<li><a href="../FoodAndSportUtils/l3.html">饮食管理</a></li>
+								<li><a href="../健身器材/健身器材.html">健身工具</a></li>
+								<li><a href="secondpage.html">健身团队</a></li>
+								<li><a href="suggestion.html">意见反馈</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2 pull-right">
+							 <ul class="nav navbar-nav navbar-inverse">
+								 <li id="register"><a href="#"><span class="glyphicon glyphicon-user"></span> 注册</a></li> 
+								 <li id="user"><a href="#"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li> 
+							 </ul> 
+						</div>
+					 </div>
+				</div>
+			</nav>
+			<!-- 内容 -->
+			
+			<div class="top bottom clearfix">
+				<!-- 表单 -->
+				<div class="content1 col-md-9 col-md-offset-2 clearfix">
+					<h2 class="text-center" style="color: red">意见反馈</h2>
+					<form>
+						<div class="form-group bp2">
+							<label for="inputEmail3" class="col-md-2 control-label text-right">反馈类型:</label>
+							<div class="col-md-10">
+								<select class="form-control">
+								  <option disabled="disabled">请选择一个类型</option>
+								  <option>器材少</option>
+								  <option>页面bug多</option>
+								  <option>太好看</option>
+								  <option>健身失败</option>
+								  <option>其他</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group bp2">
+							<label for="birthday" class="col-md-2 control-label  text-right">日期:</label>
+							<div class="col-md-10">
+								<div class="input-group date form_datetime" data-date-format="dd-MM-yyyy" data-link-field="dtp_input1">
+									<input class="form-control" size="16" type="text" name="birthday" id="birthday" value="2000-01-01" readonly> 
+									<span class="input-group-addon"> <span class="glyphicon glyphicon-th"></span></span>
+								</div>
+							</div>
+						</div>
+						<div class="form-group bp2">
+							<label for="inputEmail3" class="col-md-2 control-label  text-right">名字:</label>
+							<div class="col-md-10">
+							  <input type="email" class="form-control" id="inputEmail3" placeholder="请输入名字">
+							</div>
+						</div>
+						<div class="form-group bp2">
+							<label for="inputEmail3" class="col-md-2 control-label  text-right">邮箱:</label>
+							<div class="col-md-10">
+							  <input type="email" class="form-control" id="inputEmail3" placeholder="请输入邮箱">
+							</div>
+					    </div>
+					    <div class="form-group bp2">
+							<label for="exampleInputFile" class="col-md-2  text-right">文件:</label>
+							<div class="col-md-10">
+								<input type="file" id="exampleInputFile">
+							</div>
+					    </div>
+					    <div class="form-group bp2">
+							<label for="exampleInputFile" class="col-md-2  text-right">具体情况:</label>
+							<div class="col-md-10">
+								<textarea class="form-control" rows="3"></textarea>
+							</div>
+					    </div>
+					    <div class="col-md-10 col-md-offset-2 bp2 magin-buttom10">
+						  <div class="checkbox">
+						    <label>
+						      <input type="checkbox"> 允许下次联系
+						    </label>
+						  </div>
+						  <button type="submit" class="btn btn-default">提交</button>
+					    </div>
+					</form>
+				</div>
+				
+			</div>
+			<div class="card clearfix">
+				<img src="images/hero.png" class="img-responsive center-block"/>
+			</div>	
+		</div>
+		<!-- 版权 -->
+		<div class="container-fluid banquan top">
+			<ol class="text-center breadcrumb banquan clearfix">
+			  <li><a href="#"><p>周睿健身操</p></a></li>
+			  <li><a href="#">卡路里运动</a></li>
+			  <li class="active"><a href="#">卡路里营养</a></li>
+			  <li><a href="#">羽毛球</a></li>
+			  <li><a href="#">运动排名</a></li>
+			  <li><a href="#">家用跑步机</a></li>
+			  <li><a href="#">健身房器材</a></li>
+			  <li><a href="#">五一健身</a></li>
+			  <li><a href="#">网址导航</a></li>
+			</ol>
+			<ol class="text-center breadcrumb banquan clearfix">
+			  <li><a href="#"><p>关于偶家</p></a></li>
+			  <li><a href="#">网站地图</a></li>
+			  <li><a href="#">手机版本</a></li>
+			  <li><a href="#"><span class="glyphicon glyphicon-home">广东省广州市增城区中新镇风光路363号</span></a></li>
+			</ol>
+			<p class="text-center">版权所有&copy;广东农工商职业技术学院</p>
+		</div>
+		<!-- 登入框 -->
+		<div id="dialog-form1" style="overflow:hidden;" title="登入">
+			<form class="form-horizontal">
+				<fieldset>
+					<div class="form-group">
+					  <label class="col-sm-3 control-label">Username:</label>
+					  <div class="col-sm-9">
+						<input type="text" class="form-control" placeholder="Username">
+					  </div>
+					</div>
+					<div class="form-group">
+					  <label for="inputPassword" class="col-sm-3 control-label">Password:</label>
+					  <div class="col-sm-9">
+						<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+					  </div>
+					</div>
+					<p class="font_sm"><a href="#">没有账号，去注册</a></p>
+					<!-- <button type="button" class="btn btn-primary btn-sm col-sm-4 col-md-offset-1">登入</button>
+					<button type="button" class="btn btn-primary btn-sm col-sm-4 col-md-offset-2 close">取消</button> -->
+				</fieldset>
+			</form>
+		</div>
+		<!-- 注册框 -->
+		<div id="dialog-form2" style="overflow:hidden;" title="注册">
+			<form class="form-horizontal">
+				<fieldset>
+					<div class="form-group">
+					  <label class="col-sm-3 control-label">Phone:</label>
+					  <div class="col-sm-9">
+						<input type="text" class="form-control" placeholder="Phone">
+					  </div>
+					</div>
+					<div class="form-group">
+					  <label class="col-sm-3 control-label">Name:</label>
+					  <div class="col-sm-9">
+					    <input type="text" class="form-control" placeholder="Name">
+					  </div>
+					</div>
+					<div class="form-group">
+					  <label for="inputPassword" class="col-sm-3 control-label">Password:</label>
+					  <div class="col-sm-9">
+					    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+					  </div>
+					</div>
+					<p class="font_sm"><a href="#">已有账号，去登入</a></p>
+					<!-- <button type="button" class="btn btn-primary btn-sm col-sm-4 col-md-offset-1">登入</button>
+					<button type="button" class="btn btn-primary btn-sm col-sm-4 col-md-offset-2 close">取消</button> -->
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>
+		

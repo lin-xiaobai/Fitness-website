@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>健身网站</title>
+		<!--链接css和jQuery-->
+		<link rel="stylesheet" href="jsb/css/bootstrap.min.css" />
+		<script src="jsb/jq/jquery-3.4.1.min.js"></script>
+		<script src="jsb/js/bootstrap.min.js"></script>
+		<script src="jsb/jq/jquery-ui-1.12.0.custom/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="jsb/jq/jquery-ui-1.12.0.custom/jquery-ui.min.css"/>
+		<script src="js/user.js"></script>
+		<link rel="stylesheet" href="css/index2.css" />
+		<script>
+function showHint(str)
+{
+  var xmlhttp;
+  if (str.length==0)
+  { 
+    document.getElementById("txtHint").innerHTML="";
+    return;
+  }
+  if (window.XMLHttpRequest)
+  {
+    // IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+    xmlhttp=new XMLHttpRequest();
+  }
+  else
+  {
+    // IE6, IE5 浏览器执行代码
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function()
+  {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+      document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
+    }
+  }
+  xmlhttp.open("GET","gethint.php?q="+str,true);
+  xmlhttp.send();
+}
+</script>
+	</head>
+	<body>
+		<!--整体一个盒子-->
+		<div class="big-box">
+			<!--part1导航栏-->
+		<div class="container-fluid">
+			<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"> 
+				<div class="container-fluid">
+					<div class="row">
+						<div class="navbar-header col-md-2 col-md-offset-1">
+							<div class="row">
+								<div class="col-md-4 ">
+									<img src="img/loge.png" class="img-responsive loge" alt="Cinque Terre"/>
+								</div>
+								<div class="col-md-8">
+									<a class="navbar-brand" href="#">健身教程</a> 
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html">首页</a></li>
+								<li><a href="../FoodAndSportUtils/l2.html">健身计划</a></li>
+								<li><a href="../FoodAndSportUtils/l3.html">饮食管理</a></li>
+								<li><a href="../健身器材/健身器材.html">健身工具</a></li>
+								<li><a href="secondpage.html">健身团队</a></li>
+								<li><a href="suggestion.html">意见反馈</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2 pull-right">
+							 <ul class="nav navbar-nav navbar-inverse">
+								 <li id="register"><a href="#"><span class="glyphicon glyphicon-user"></span> 注册</a></li> 
+								 <li id="user"><a href="#"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li> 
+							 </ul> 
+						</div>
+					 </div>
+				</div>
+			</nav>
+		</div>
+			
+			<!--part2-->
+			<div class="second-box ">
+				<!--主题和搜索框-->
+				<p class="txt">专业全面的食物数据库</p>
+				<!--搜索框-->
+				<!--包含文本框和按钮的盒子-->
+				<div class="part2-input">
+				<div class="input-box">
+					<input type="text" placeholder="搜索食物查询热量" onkeyup="showHint(this.value)"/>
+					<p>建议搜索: <span id="txtHint"></span></p> 
+				</div>
+				<a href="#">
+					<div class="search">
+						<p>搜索</p>
+					</div>
+				</a>
+				</div>
+			</div>
+			
+			<!--part3-->
+			<div class="third-box">
+				<!--提示当前位置-->
+				<p class="header">当前位置：&nbsp;&nbsp;
+					<a href="#">健身</a>
+					&nbsp;>><a href="#">食物百科</a>
+				</p>
+				
+			<!--第一个盒子-->
+			<div class="content-one">
+				<!--标题-->
+				<p class="text">
+					<span>|</span>&nbsp;常见食物分类
+				</p>
+				
+				<!--小盒子以及内容-->
+			<a href="#">
+				<div class="img-border">
+					<img src="img/饮食-img1.png" width="120px" height="120px">
+				<p >谷薯芋、杂豆、主食</p>
+				<p >米饭，玉米(鲜)，馒头，燕麦片，面包</p>
+				<p >更多的...</p>
+				<!--分割线-->
+				<hr class="line" />
+				</div>
+			</a>		
+			
+			<a href="#">
+				<div class="img-border2">
+					<img src="img/饮食-img2.png" width="120px" height="120px">
+				<p >蛋类、肉类及制品</p>
+				<p >鸡蛋，猪肉(鲜)，鸡蛋(煮)，鸡，火腿肠</p>
+				<p >更多的...</p>
+				<!--分割线-->
+				<hr class="line" />
+				</div>
+			</a>
+	
+				<a href="#">
+					<div class="img-border">
+						<img src="img/饮食-img3.png" width="120px" height="120px">
+				<p >奶类及制品</p>
+				<p >酸奶，牛奶，酸奶(脱脂)，牛奶(伊利牌)</p>
+				<p >更多的...</p>
+					<!--分割线-->
+				<hr class="line" />
+					</div>
+				</a>
+				
+				
+				<a href="#">
+					<div class="img-border2">
+						<img src="img/饮食-img4.png" width="120px" height="120px">
+				<p >蔬果和菌藻</p>
+				<p >苹果，香蕉，番茄，黄瓜，西瓜</p>
+				<p >更多的...</p>
+					<!--分割线-->
+				<hr class="line" />
+					</div>
+				</a>
+		
+				<a href="#">
+					<div class="img-border">
+						<img src="img/饮食-img5.png" width="120px" height="120px">
+				<p >坚果、大豆及制品</p>
+				<p >豆浆，豆浆(甜)，豆腐，核桃(干)，豆腐(南)</p>
+				<p >更多的...</p>
+				<hr class="line" />
+					</div>
+			</a>		
+				<a href="#">
+					<div class="img-border2">
+						<img src="img/饮食-img6.png" width="120px" height="120px">
+				<p >饮料</p>
+				<p >薄荷 玉米须茶，雀巢咖啡MIX【韩文版】，咖啡粉，麦斯威尔原味咖啡，黑咖啡</p>
+				<p >更多的...</p>
+					<!--分割线-->
+				<hr class="line" />
+		</div></a>
+		
+				<a href="#">
+					<div class="img-border">
+						<img src="img/饮食-img7.png" width="120px" height="120px">
+				<p >食用油、油脂及制品</p>
+				<p>色拉油，花生油，豆油，混合油(菜+棕)，葵花籽油 </p>
+				<p >更多的...</p>
+					<!--分割线-->
+				<hr class="line" />
+					</div>
+				</a>
+				
+				<a href="#">
+					<div class="img-border2">
+						<img src="img/饮食-img8.png" width="120px" height="120px">
+				<p >调味品</p>
+				<p >蜂蜜，蜂蜜(瑰花)，红糖，榨菜，白砂糖</p>
+				<p >更多的...</p>
+					<!--分割线-->
+				<hr class="line" />
+					</div>
+				</a>
+		
+				<a href="#">
+					<div class="img-border">
+						<img src="img/饮食-img12.png" width="120px" height="120px">
+				<p >零食、点心、冷饮</p>
+				<p >饼干，蛋糕(黄蛋糕)，薄荷松仁粽子糖，巧克力，冰淇淋</p>
+				<p >更多的...</p>
+					<!--分割线-->
+				<hr class="line" />
+					</div>
+			</a>
+			
+				<a href="#">
+					<div class="img-border2">
+						<img src="img/饮食-img14.jpg" width="120px" height="120px">
+				<p >靓汤</p>
+				<p >碗仔翅、紫菜汤、老火汤（如清补凉、青红萝卜瘦肉汤）</p>
+				<p >更多的...</p>
+					<!--分割线-->
+				<hr class="line" />
+					</div>
+				</a>
+		
+				<a href="#">
+					<div class="img-border">
+						<img src="img/饮食-img11.png" width="120px" height="120px">
+				<p >菜肴</p>
+				<p >炒空心菜，绿豆汤，素炒小白菜，蜂蜜柠檬水，烧茄子</p>
+				<p >更多的...</p>
+					<!--分割线-->
+				<hr class="line" />
+					</div>
+				</a>
+		
+				<a href="#">
+					<div class="img-border2">
+						<img src="img/饮食-水果.jpg" width="120px" height="120px">
+				<p >水果类</p>
+				<p >梨、柑、柚子、罗汉果、柿子、杨桃、芒果、猕猴桃、香蕉、橙子、草莓</p>
+				<p >更多的...</p>
+					<!--分割线-->
+				<hr class="line" />
+					</div>
+				</a>
+				
+				<a href="#">
+					<div class="img-border">
+						<img src="img/肉.jpg" width="120px" height="120px">
+				<p >鱼肉、猪肉</p>
+				<p >猪肉、猪心、猪肝、猪脑、猪骨、火腿、牛肚、鸡肫、鹅肉、</p>
+				<p >更多的...</p>
+				<hr class="line" />
+					</div>
+				</a>
+				
+		</div>	
+				<!--第二个盒子-->	
+				<div class="content-two">
+					<!--标题-->
+					<p class="text">
+						<span>|</span>&nbsp;常见餐厅分类
+					</p>
+					<!--小盒子内容-->
+					<a href="#">
+						<div class="img-border3">
+							<img src="img/餐厅-img1.png" width="170px" height="110px">
+							<p >肯德基</p>
+							<p >薯条（肯德基），鸡肉汉堡（肯德基），新奥尔良鸡翅（肯德基），劲爆鸡米花（肯德基），玉米沙拉（肯德基）                                    
+							</p>
+							<p >详细</p>
+						</div>
+					</a>	
+			
+				<a href="#">
+					<div class="img-border3">
+						<img src="img/餐厅-img2.png" width="170px" height="110px">
+						<p >麦当劳</p>
+						<p >	
+						麦当劳脆皮甜筒，麦当劳巨无霸汉堡，麦当劳原味板烧鸡腿堡，麦当劳麦香鸡腿堡，麦当劳香辣鸡腿堡                          
+						</p>
+						<p >详细</p>
+					</div>
+				</a>
+			
+				<a href="#">
+					<div class="img-border3">
+						<img src="img/餐厅-img3.png" width="170px" height="110px">
+						<p >必胜客</p>
+						<p >                                            
+                                                  必胜客原味肋排，必胜客酱汁鸡翅，必胜客传统鸡翅，必胜客超级至尊披萨（6寸迷你），必胜客奶油蘑菇鸡肉汤  
+						<p >详细</p>
+					</div>
+				</a>	
+			
+				<a href="#">
+					<div class="img-border3">
+						<img src="img/餐厅-img4.png" width="170px" height="110px">
+						<p >汉堡王</p>
+						<p > 
+                                                  汉堡王 火烤鸡腿色拉                                    
+						</p>
+						<p >详细</p>
+					</div>
+				</a>
+				
+				<a href="#">
+					<div class="img-border3">
+						<img src="img/餐厅-img5.png" width="170px" height="110px">
+						<p >星巴克</p>
+						<p > 
+          					星巴克摩卡（脱脂牛奶、不加奶油），星巴克草莓星冰乐（加奶油），星巴克草莓星冰乐（无奶油），星巴克卡布基诺（豆奶/大杯），星巴克热豆奶香草拿铁                                    
+						</p>
+						<p >详细</p>
+					</div>
+				</a>
+				
+				<a href="#">
+					<div class="img-border3">
+						<img src="img/餐厅-img6.png" width="170px" height="110px">
+						<p >德克士</p>
+						<p >   
+                                                           德克士照烧鸡肉米堡，德克士孜然鸡柳，德克士魔法鸡块                                    
+						</p>
+						<p >详细</p>
+					</div>
+				</a>	
+			
+			</div>	
+			</div>
+	</div>
+			<div class="container-fluid banquan top">
+			<ol class="text-center breadcrumb banquan clearfix">
+			  <li><a href="#"><p>周睿健身操</p></a></li>
+			  <li><a href="#">卡路里运动</a></li>
+			  <li class="active"><a href="#">卡路里营养</a></li>
+			  <li><a href="#">羽毛球</a></li>
+			  <li><a href="#">运动排名</a></li>
+			  <li><a href="#">家用跑步机</a></li>
+			  <li><a href="#">健身房器材</a></li>
+			  <li><a href="#">五一健身</a></li>
+			  <li><a href="#">网址导航</a></li>
+			</ol>
+			<ol class="text-center breadcrumb banquan clearfix">
+			  <li><a href="#"><p>关于偶家</p></a></li>
+			  <li><a href="#">网站地图</a></li>
+			  <li><a href="#">手机版本</a></li>
+			  <li><a href="#"><span class="glyphicon glyphicon-home">广东省广州市增城区中新镇风光路363号</span></a></li>
+			</ol>
+			<p class="text-center">版权所有&copy;广东农工商职业技术学院</p>
+		</div>
+		<!-- 登入框 -->
+		<div id="dialog-form1" style="overflow:hidden;" title="登入">
+			<form class="form-horizontal">
+				<fieldset>
+					<div class="form-group">
+					  <label class="col-sm-3 control-label">Username:</label>
+					  <div class="col-sm-9">
+					    <input type="text" class="form-control" placeholder="Username">
+					  </div>
+					</div>
+					<div class="form-group">
+					  <label for="inputPassword" class="col-sm-3 control-label">Password:</label>
+					  <div class="col-sm-9">
+					    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+					  </div>
+					</div>
+					<p class="font_sm"><a href="#">没有账号，去注册</a></p>
+					<!-- <button type="button" class="btn btn-primary btn-sm col-sm-4 col-md-offset-1">登入</button>
+					<button type="button" class="btn btn-primary btn-sm col-sm-4 col-md-offset-2 close">取消</button> -->
+				</fieldset>
+			</form>
+		</div>
+		<!-- 注册框 -->
+		<div id="dialog-form2" style="overflow:hidden;" title="注册">
+			<form class="form-horizontal">
+				<fieldset>
+					<div class="form-group">
+					  <label class="col-sm-3 control-label">Phone:</label>
+					  <div class="col-sm-9">
+					    <input type="text" class="form-control" placeholder="Phone">
+					  </div>
+					</div>
+					<div class="form-group">
+					  <label for="inputPassword" class="col-sm-3 control-label">Password:</label>
+					  <div class="col-sm-9">
+					    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+					  </div>
+					</div>
+					<div class="form-group">
+					  <label class="col-sm-3 control-label">Validate:</label>
+					  <div class="col-sm-9">
+					    <input type="text" class="form-control" placeholder="Validate">
+					  </div>
+					</div>
+					<p class="font_sm"><a href="#">已有账号，去登入</a></p>
+					<!-- <button type="button" class="btn btn-primary btn-sm col-sm-4 col-md-offset-1">登入</button>
+					<button type="button" class="btn btn-primary btn-sm col-sm-4 col-md-offset-2 close">取消</button> -->
+				</fieldset>
+			</form>
+		</div>
+		
+		
+		
+		
+		</div>
+	</body>
+	
+</html>

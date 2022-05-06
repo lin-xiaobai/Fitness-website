@@ -1,0 +1,68 @@
+body{
+		padding-top: 50px;
+		background-image: url(../images/bg3.jpg);
+		background-repeat:no-repeat;
+	}
+.top{
+	margin-top: 11%;
+}
+.bottom{
+	margin-bottom: 8%;
+}
+.bp2{
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+.contentAll{
+}
+.card{
+	width: 20%;
+	height: 20%;
+	position: absolute;
+	top: 10%;
+	left: 4%;
+}
+.magin-buttom10{
+	margin-bottom: 10px;
+}
+input,select,textarea{
+	opacity: 0.85;
+}
+/* .content1{
+	float: left;
+	margin-top: -5%;
+	margin-left: 20%;
+} */
+.content1::before{
+ 			content:"";
+ 			/*-webkit-filter: opacity(50%);  
+    		filter: opacity(50%); */
+    		background-color: #FFFFFF;
+			background-repeat: no-repeat;
+    		opacity:0.5;//透明度设置
+ 			z-index:-1;
+ 			width:100%; 
+ 			height:100%;
+ 			position:absolute;
+ 			/* 一定要设置position:absolute,这样才能设置z-index，让背景处于内容的下一层 */
+ 			top:0px;
+ 			left:0px;
+ 			border-radius:25px;
+ 		}
+form{
+	margin: 0 auto;
+}
+/* 版权 */
+.banquan{
+	background-color: #080808;
+}
+.breadcrumb{
+	height: 18px;
+}
+.banquan>p{
+	color: #fff;
+}
+a:hover{
+	text-decoration: none;
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset { text-align: center }

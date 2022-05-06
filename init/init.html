@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>init</title>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery-ui-1.10.3.min.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/button.css">
+	<script src="js/zoom.js"></script>
+	<link rel="stylesheet" href="css/init.css">
+	<script src="js/init.js"></script>
+	<script>
+		$(function(){
+            var obj = new zoom('mask', 'bigimg','smallimg');
+            obj.init();
+        })
+	</script>
+</head>
+<body>
+	<!--导航栏-->
+	<nav>
+	</nav>
+	<div class="fullPage">
+		<div class="section" id="page1">
+			<div class="bg">
+				<img src="images/1.jpg" alt="">
+			</div>
+			<div class="box1_context">
+				<p>This is a revolution of </p>
+				<p>  sensibility</p>
+				<p>你我皆是勇敢的挑战者</p>
+			</div>
+			<button class="btn btn-1 btn-1a" onClick="window.open('../IndexAndSuggestion/index.html')">JOIN IN</button>
+		</div>
+		<div class="section section2" id="page2">
+			<div class="bg">
+				<img src="images/2.jpg" alt="">
+			</div>
+			<div class="page2_title">
+				<p>什么是健身?</p>
+				<p>健身是一种体育项目,如各种徒手健美操、韵律操、形体操以及各种自抗力动作,可以增强力量、柔韧性，增加耐力，提高协调，控制身体各部分的能力，从而使身体强健</p>
+			</div>
+			<div class="page2_msg">
+				<ul>
+					<li class="page2_li1">
+						<div class="page2_img">
+							<img src="images/Aphone.png" alt="">
+							<p>攀岩</p>
+							<p>完全感受自由落体的快感享受反弹失重的乐趣</p>
+						</div>
+					</li>
+					<li class="page2_li2">
+						<div class="page2_img">
+							<img src="images/book.png" alt="">
+							<p>冲浪</p>
+							<p>享受与海浪搏击驰骋在海浪上的快感</p>
+						</div>
+					</li>
+					<li class="page2_li3">
+						<div class="page2_img">
+							<img src="images/ipod.png" alt="">
+							<p>街道疾降</p>
+							<p>跳跃以实用为主比极限轮滑更加狂野</p>
+						</div>
+					</li>
+					<li class="page2_li4">
+						<div class="page2_img">
+							<img src="images/pc.png" alt="">
+							<p>跑酷</p>
+							<p>依靠自身体能快速有效地驾驭任何已知与未知环境</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="section section3" id="page3">
+			<div class="bg">
+				<img src="images/3.jpg" alt="#">
+			</div>
+			<div class="mask2"></div>
+			<div class="page3_title">
+				<p>our images</p>
+			</div>
+			<div class="page3_img_box1">
+				<ul>
+					<li>
+						<img src="images/p3_1.jpeg" class="smallimg" alt="#">
+					</li>
+					<li>
+						<img src="images/ps_1.jpeg" class="smallimg" alt="#">
+					</li>
+					<li>
+						<img src="images/p3_2.jpeg" class="smallimg" alt="#">
+					</li>
+					<li>
+						<img src="images/ps_2.jpeg" class="smallimg" alt="#">
+					</li>
+				</ul>
+			</div>
+			<div class="page3_img_box2">
+				<ul>
+					<li>
+						<img src="images/p3_3.jpg" class="smallimg" alt="#">
+					</li>
+					<li>
+						<img src="images/p3_4.jpeg" class="smallimg" alt="#">
+					</li>
+					<li>
+						<img src="images/ps_3.jpg" class="smallimg" alt="#">
+					</li>
+					<li>
+						<img src="images/ps_4.jpg" class="smallimg" alt="#">
+					</li>
+				</ul>
+			</div>
+			<div class="page3_img_box3">
+				<ul>
+					<li>
+						<img src="images/pb_1.png" class="smallimg" alt="">
+					</li>
+				</ul>
+			</div>
+			<img src="" alt="" class="bigimg">
+			<div class="mask">
+				<img src="images/close.png" alt="">
+			</div>
+		</div>
+		<div class="section section4" id="page4">
+			<div class="bg">
+				<img src="images/4.jpg" alt="">
+			</div>
+			<div class="mask2">
+				<div></div>
+			</div>
+			<div class="page4_box_title">
+				<div>We are ready,you?</div>
+			</div>
+			<div class="ready">
+				<img src="images/ready.png" alt="">
+			</div>
+			<button class="btn btn-1 btn-1a" onClick="window.open('../mwq/index.html')">JOIN IN</button>
+		</div>
+	</div>
+</body>
+</html>

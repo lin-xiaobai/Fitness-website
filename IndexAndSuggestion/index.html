@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>健身网站</title>
+		<link rel="stylesheet" href="jsb/css/bootstrap.min.css" />
+		<script src="jsb/jq/jquery-3.4.1.min.js"></script>
+		<script src="jsb/js/bootstrap.min.js"></script>
+		<script src="jsb/jq/jquery-ui-1.12.0.custom/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="jsb/jq/jquery-ui-1.12.0.custom/jquery-ui.min.css"/>
+		<script src="js/index.js"></script>
+		<script src="js/user.js"></script>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<!-- 导航栏 -->
+		<div class="container-fluid">
+			<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"> 
+				<div class="container-fluid">
+					<div class="row">
+						<div class="navbar-header col-md-2 col-md-offset-1">
+							<div class="row">
+								<div class="col-md-4 ">
+									<img src="images/loge.png" class="img-responsive loge" alt="Cinque Terre"/>
+								</div>
+								<div class="col-md-8">
+									<a class="navbar-brand" href="#">健身教程</a> 
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html">首页</a></li>
+								<li><a href="../FoodAndSportUtils/l2.html">健身计划</a></li>
+								<li><a href="../FoodAndSportUtils/l3.html">饮食管理</a></li>
+								<li><a href="../健身器材/健身器材.html">健身工具</a></li>
+								<li><a href="secondpage.html">健身团队</a></li>
+								<li><a href="suggestion.html">意见反馈</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2 pull-right">
+							 <ul class="nav navbar-nav navbar-inverse ahead">
+								 <li id="register"><a href="#"><span class="glyphicon glyphicon-user"></span> <span>注册</span></a></li> 
+								 <li id="user"><a href="#"><span class="glyphicon glyphicon-log-in"></span> <span>登入</span></a></li> 
+							 </ul> 
+						</div>
+					 </div>
+				</div>
+			</nav>
+			<!-- 轮播图 -->
+			<div class="row top">
+				<div class="col-md-12">
+					<div class="carousel slide" id="carousel-example-generic" data-ride="carousel" data-interval="1500">
+						<ol class="carousel-indicators">
+							<li data-target="#slidershow" data-slide-to="0" class="active"></li>
+							<li data-target="#slidershow" data-slide-to="1"></li>
+							<li data-target="#slidershow" data-slide-to="2"></li>
+							<li data-target="#slidershow" data-slide-to="3"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="item active">
+								<img src="./images/lunbotu1.jpg">
+							</div>
+							<div class="item">
+								<img src="./images/lunbotu2.jpg">
+							</div>
+							<div class="item">
+								<img src="./images/lunbotu3.jpg">
+							</div>
+							<div class="item">
+								<img src="./images/lunbotu4.jpg">
+							</div>
+						</div>
+						<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" style="font-size: 40px;opacity: 0.7;"></span>
+						</a>
+						<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" style="font-size: 40px;opacity: 0.7;"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- 内容框 -->
+			<div class="row top">
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="./images/nrl1.png" alt="...">
+			      <div class="caption magin_left">
+			        <h3>健身计划</h3>
+			        <p>专业的计划团队，为您制定专业的计划</p>
+			        <p><a href="../lwf/l2.html" class="btn btn-primary" role="button">查看</a></p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/nrl2.png" alt="...">
+			      <div class="caption magin_left">
+			        <h3>饮食管理</h3>
+			        <p>专业的饮食套餐，给你最健康的饮食管理</p>
+			        <p><a href="../lwf/l3.html" class="btn btn-primary" role="button">查看</a></p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/nrl3.png" alt="...">
+			      <div class="caption magin_left">
+			        <h3>健身器材</h3>
+			        <p>每个角落都是私人健身房，给你最合适的健身器材</p>
+			        <p><a href="../健身器材/健身器材.html" class="btn btn-primary" role="button">查看</a></p>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <img src="images/nrl4.png" alt="...">
+			      <div class="caption magin_left">
+			        <h3>健身团队</h3>
+			        <p>专业的健身团队，为你的健身之旅提供专业的指导！</p>
+			        <p><a href="secondpage.html" class="btn btn-primary" role="button">查看</a></p>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<!-- 资讯框 -->
+			<div class="container-fluid">
+				<div class="row zixunkuang top">
+					<div class="col-md-7 alert-info">
+						<p class="floatleft"><span class="glyphicon glyphicon-globe">新闻资讯</span></p>
+						<a href="#" ><p class="floatright">更多<span class="glyphicon glyphicon-menu-right "></span><span class="glyphicon glyphicon-menu-right "></span></p></a>
+						<hr style="background-color: #000; width: 80%;text-align: center;height: 1px;opacity: 15%;"/>
+						<ul class="list-group">
+						  <li class="list-group-item"><a href="#">关于健身的这几个误区,千万不要步入!</a><span class="floatright">2020.11.15</span></li>
+						  <li class="list-group-item"><a href="#">健身前要了解的东西有很多,不知道这些,可能你会白练</a><span class="floatright">2020.11.14</span></li>
+						  <li class="list-group-item"><a href="#">健身菜鸟必备的健身常识</a><span class="floatright">2020.11.11</span></li>
+						  <li class="list-group-item"><a href="#">了解健身训练的相关好处,以及健身的黄金动作,让你快速了解健身</a><span class="floatright">2020.11.10</span></li>
+						  <li class="list-group-item"><a href="#">8个关于健身的伪科学在这里,看清他们,别再胡乱的训练了</a><span class="floatright">2020.11.10</span></li>
+						  <li class="list-group-item"><a href="#">女生健身需要知道的!关于减肥的几条小知识!</a><span class="floatright">2020.11.05</span></li>
+						  <li class="list-group-item"><a href="#">小姐姐坚持健身4年,收获众多粉丝,身材好到让人羡慕!</a><span class="floatright">2020.11.05</span></li>
+						</ul>
+					</div>
+					<div class="col-md-5 alert-info">
+						<p class="floatleft"><span class="glyphicon glyphicon-flash">热门留言</span></p>
+						<hr style="background-color: #000; width: 80%;text-align: center;height: 1px;opacity: 15%;"/>
+						<ul class="list-group">
+						  <li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-fire"></span>健身是自己努力才能有回报的事</a><span class="floatright">2020.11.15</span></li>
+						  <li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-fire"></span>真正的健身只是一种高效的生活方式</a><span class="floatright">2020.11.14</span></li>
+						  <li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-fire"></span>你在享受生活，而我在享受生命。健身，尝试不同的运动</a><span class="floatright">2020.11.11</span></li>
+						  <li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-fire"></span>生命的过程就是不断追寻自我的历程</a><span class="floatright">2020.11.10</span></li>
+						  <li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-fire"></span>我们不断的发掘自己，完成没有完成的使命</a><span class="floatright">2020.11.09</span></li>
+						  <li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-fire"></span>健身让我们不断突破自己，让我们清楚的知道自己是谁</a><span class="floatright">2020.11.03</span></li>
+						  <li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-fire"></span>健身给我们带来的快感，不健身的人永远体会不到的</a><span class="floatright">2020.11.01</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 版权 -->
+		<div class="container-fluid banquan top">
+			<ol class="text-center breadcrumb banquan clearfix">
+			  <li><a href="#"><p>周睿健身操</p></a></li>
+			  <li><a href="#">卡路里运动</a></li>
+			  <li class="active"><a href="#">卡路里营养</a></li>
+			  <li><a href="#">羽毛球</a></li>
+			  <li><a href="#">运动排名</a></li>
+			  <li><a href="#">家用跑步机</a></li>
+			  <li><a href="#">健身房器材</a></li>
+			  <li><a href="#">五一健身</a></li>
+			  <li><a href="#">网址导航</a></li>
+			</ol>
+			<ol class="text-center breadcrumb banquan clearfix">
+			  <li><a href="#"><p>关于偶家</p></a></li>
+			  <li><a href="#">网站地图</a></li>
+			  <li><a href="#">手机版本</a></li>
+			  <li><a href="#"><span class="glyphicon glyphicon-home">广东省广州市增城区中新镇风光路363号</span></a></li>
+			</ol>
+			<p class="text-center">版权所有&copy;广东农工商职业技术学院</p>
+		</div>
+		<!-- 登入框 -->
+		<div id="dialog-form1" style="overflow:hidden;" title="登入">
+			<form class="form-horizontal">
+				<fieldset>
+					<div class="form-group">
+					  <label class="col-sm-3 control-label">Username:</label>
+					  <div class="col-sm-9">
+					    <input type="text" class="form-control" placeholder="Username">
+					  </div>
+					</div>
+					<div class="form-group">
+					  <label for="inputPassword" class="col-sm-3 control-label">Password:</label>
+					  <div class="col-sm-9">
+					    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+					  </div>
+					</div>
+					<p class="font_sm"><a href="#">没有账号，去注册</a></p>
+				</fieldset>
+			</form>
+		</div>
+		<!-- 注册框 -->
+		<div id="dialog-form2" style="overflow:hidden;" title="注册">
+			<form class="form-horizontal">
+				<fieldset>
+					<div class="form-group">
+					  <label class="col-sm-3 control-label">Phone:</label>
+					  <div class="col-sm-9">
+					    <input type="text" class="form-control" placeholder="Phone">
+					  </div>
+					</div>
+					<div class="form-group">
+					  <label class="col-sm-3 control-label">Name:</label>
+					  <div class="col-sm-9">
+					    <input type="text" class="form-control" placeholder="Name">
+					  </div>
+					</div>
+					<div class="form-group">
+					  <label for="inputPassword" class="col-sm-3 control-label">Password:</label>
+					  <div class="col-sm-9">
+					    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+					  </div>
+					</div>
+					<p class="font_sm"><a href="#">已有账号，去登入</a></p>
+					<!-- <button type="button" class="btn btn-primary btn-sm col-sm-4 col-md-offset-1">登入</button>
+					<button type="button" class="btn btn-primary btn-sm col-sm-4 col-md-offset-2 close">取消</button> -->
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>

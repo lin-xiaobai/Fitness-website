@@ -1,0 +1,400 @@
+/*重置样式*/
+*,
+::before,
+::after{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	/*清除移动端默认点击时的高亮效果*/
+	-webkit-tap-highlight-color: transparent;
+}
+/*设置总体文字样式*/
+body{
+	font-family:"微软雅黑";
+}
+/*点击取消下划线*/
+a{
+	text-decoration: none;
+}	
+/*清除浮动*/
+.clearfix::before,.clearfix::after{
+	content: "";
+	height: 0;
+	line-height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+/*设置整体盒子为百分之百*/
+.big-box{
+	width: 100%;
+}
+/*设置导航栏样式*/
+.header>.header-box{
+	position: fixed;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 70px;
+	background: rgba(0,0,0,0.5);
+	z-index: 1000;
+}
+/*设置part2的盒子样式*/
+.second-box{
+	margin-top:51px ;
+	width: 100%;
+/*
+	max-width: 1700px;
+	min-width: 1000px;
+*/
+	height: 360px;
+	min-height: 500px;
+	background-image: url(../img/head-img.jpg);
+	background-repeat: no-repeat;
+	/*设置背景图片的整个图片*/
+	background-size:100%;
+	position: relative;
+}
+/*设置导航栏主题的文字样式*/
+.second-box>.txt{
+	text-align: center;
+	padding-top: 150px;
+	font-size: 40px;
+	color: #FFFFFF;
+	letter-spacing:5px;
+}
+/*<!--包含文本框和按钮的盒子样式-->*/
+.second-box>.part2-input{
+	width:120px;
+	height: 45px;
+	float: left;
+	margin-top:50px ;
+	position:absolute;
+	left: 32%;
+}
+/*文本框盒子样式*/
+.second-box>.part2-input>.input-box{
+	display:inline-block ;
+	float: left;
+	width: 600px;
+	height: 45px;
+	padding-left:10px ;
+	background: #FFFFFF;	
+}
+/*文本框的样式*/
+.second-box>.part2-input>.input-box>input{
+	width: 400px;
+	height: 45px;
+	outline: none;
+	border: #FFFFFF;
+}
+.second-box>.part2-input>.input-box>p{
+	color: #FFFFFF;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-left: -100px;
+	
+}
+.second-box>.part2-input>.input-box>p>span{
+	color: #FFFFFF;
+	font-size: 20px;
+}
+/*搜索按钮样式*/
+.second-box>.part2-input>a>.search{
+	position:absolute;
+	left: 600px;
+	width: 100px;
+	height: 45px;
+	background: red;
+}
+/*搜索按钮的文字样式*/
+.second-box>.part2-input>a>.search>p{
+		text-align: center;
+		margin-top:12.5px ;
+		font-size: 14px;
+		color: #FFFFFF;
+}
+/*第三个盒子样式*/
+.third-box{
+	width: 1250px;
+	height: 1180px;
+	/*background: rgba(0,0,0,0.1);*/
+	/*居中*/
+	margin: 0 auto;
+	margin-top:25px ;
+}
+/*提示当前网站的位置*/
+.third-box>.header{
+	font-size: 10px;
+	color: #000000;
+	height: 10px;
+	z-index: 100;
+	margin-bottom: 10px;
+}
+/*链接前的样式*/
+.third-box>.header>a:link{
+	/*取消下划线*/
+	text-decoration: none;	
+}
+/*点击前的颜色*/
+.third-box>.header>a:visited{
+	color: rgb(169,169,169,169);
+}
+/*鼠标停留的颜色*/
+.third-box>.header>a:hover{
+	color: red;
+}
+/*part3下的第一个盒子*/
+.third-box>.content-one{
+	width: 825px;
+	height: 1150px;
+	/*background: #1C94C4;*/
+	float: left;
+	margin-top:6px ;
+	float: left;
+}
+/*标题*/
+.third-box>.content-one>.text{
+	font-size: 20px;
+	font-weight: 800;
+	/*padding-top:20px ;*/
+}
+.third-box>.content-one>.text>span{
+	font-size: 20px;
+	color: red;	
+}
+/*第三part的第一个盒子下的第奇数的盒子*/
+/*鼠标停留时增加一层遮罩层*/
+.third-box>.content-one>a>.img-border:hover::after{
+	content: '';
+    background-color: rgba(245,245,245,0.4);
+        position: absolute;
+        left: 0;
+        height: 100%;
+        top: 0px;
+        width: 100%;
+        z-index: 99;
+        border-radius: 4px;
+}
+.third-box>.content-one>a>.img-border{
+	width: 400px;
+	height: 120px;
+	float: left;
+	/*background: #000000;*/
+	margin-right:25px;
+	position: relative;
+	margin-bottom: 40px;
+}
+.third-box>.content-one>a>.img-border>img{
+	/*border: 1px solid rgba(0,0,0,0.2);*/
+	box-shadow:  0 3px 3px rgba(0,0,0,0.1),0 0 3px 3px  rgba(0,0,0,0.1);
+	
+	}
+/*虚线*/
+.line{
+	height: 2px;
+	color: #000000;
+	/*opacity: 0.2;*/
+	margin:20px 0;
+}
+/*p元素的样式*/
+/*采用子元素选择器*/
+.third-box>.content-one>a>.img-border>p:nth-child(2){
+	font-size:14px;
+	color:#3F73DE;	
+	font-weight:700;
+	position: absolute;
+	left: 140px;
+	top: 0px;
+}
+.third-box>.content-one>a>.img-border>p:nth-child(3){
+	font-size:14px;
+	color:#000000;	
+	position: absolute;
+	left: 140px;
+	top: 30px;
+}
+.third-box>.content-one>a>.img-border>p:nth-child(4){
+	font-size:10px;
+	color:#3F73DE;	
+	position: absolute;
+	left: 140px;
+	bottom: 0px;
+	margin-bottom:0;
+}
+
+/*第三part的第一个盒子下的第偶数的盒子*/
+.third-box>.content-one>a>.img-border2{
+	width: 400px;
+	height: 120px;
+	float: left;
+	/*background: #000000;*/
+	position: relative;
+	margin-bottom: 15px;
+}
+/*鼠标停留时增加一层遮罩层*/
+.third-box>.content-one>a>.img-border2:hover::after{
+	content: '';
+    background-color: rgba(245,245,245,0.4);
+        position: absolute;
+        left: 0;
+        height: 100%;
+        top: 0px;
+        width: 100%;
+        z-index: 99;
+        border-radius: 4px;
+}
+.third-box>.content-one>a>.img-border2>img{
+	/*border: 1px solid rgba(0,0,0,0.2);*/
+	box-shadow:  0 3px 3px rgba(0,0,0,0.1),0 0 3px 3px  rgba(0,0,0,0.1);
+	
+}
+/*p元素的样式*/
+/*采用子元素选择器*/
+.third-box>.content-one>a>.img-border2>p:nth-child(2){
+	font-size:14px;
+	color:#3F73DE;	
+	font-weight:700;
+	position: absolute;
+	left: 140px;
+	top: 0px;
+}
+.third-box>.content-one>a>.img-border2>p:nth-child(3){
+	font-size:14px;
+	color:#000000;	
+	position: absolute;
+	left: 140px;
+	top: 30px;
+}
+.third-box>.content-one>a>.img-border2>p:nth-child(4){
+	font-size:10px;
+	color:#3F73DE;	
+	position: absolute;
+	left: 140px;
+	bottom: 0px;
+	margin-bottom:0;
+}
+
+
+/*第二个盒子*/
+.third-box>.content-two{
+	width: 400px;
+	height:1150px;
+	float: left;
+	margin-left: 25px;
+	margin-top:6px ;
+	/*background: #1C94C4;*/
+}
+/*标题*/
+.third-box>.content-two>.text{
+	font-size: 20px;
+	font-weight: 800;
+	/*padding-top:20px ;*/
+}
+.third-box>.content-two>.text>span{
+	font-size: 20px;
+	color: red;	
+}
+/*盒子内容*/
+.third-box>.content-two>a>.img-border3{
+	width: 400px;
+	height: 110px;
+	float: left;
+	/*background: #000000;*/
+	position: relative;
+	margin-bottom: 40px;
+}
+/*鼠标停留时增加一层遮罩层*/
+.third-box>.content-two>a>.img-border3:hover::after{
+	content: '';
+    background-color: rgba(245,245,245,0.2);
+        position: absolute;
+        left: 0;
+        height: 100%;
+        top: 0px;
+        width: 100%;
+        z-index: 99;
+        border-radius: 4px;
+}
+/*p元素的样式*/
+/*采用子元素选择器*/
+.third-box>.content-two>a>.img-border3>p:nth-child(2){
+	font-size:14px;
+	color:#3F73DE;	
+	font-weight:700;
+	position: absolute;
+	left: 180px;
+	top: 0px;
+}
+.third-box>.content-two>a>.img-border3>p:nth-child(3){
+	font-size:12px;
+	color:#000000;
+	opacity: 0.6;	
+	position: absolute;
+	left: 180px;
+	top: 25px;
+	line-height: 16px;
+}
+.third-box>.content-two>a>.img-border3>p:nth-child(4){
+	font-size:10px;
+	color:#3F73DE;	
+	position: absolute;
+	left: 180px;
+	bottom: 0px;
+	margin-bottom:0;
+}
+
+.top{
+	margin-top: 25px;
+		}
+		/* 版权 */
+.banquan{
+			background-color: #080808;
+		}
+.breadcrumb{
+			height: 18px;
+		}
+.banquan>p{
+			color: #fff;
+		}
+
+
+@-webkit-keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(-500px);
+	}	
+	100% {
+		opacity: 1;
+		-webkit-transform: translatex(0);
+	}
+}
+
+@keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-500px);
+	}	
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.third-box>.content-one>a>.img-border{
+	animation:fadeInLeft linear 1s ;
+	-webkit-animation: fadeInLeft linear 1s;
+    
+}
+
+.third-box>.content-one>a>.img-border2{
+	animation:fadeInLeft linear 1.5s ;
+	-webkit-animation: fadeInLeft linear 1.5s;
+    
+}
+
+
+.third-box>.content-two>a>.img-border3{
+	animation:fadeInLeft linear 2s ;
+	-webkit-animation: fadeInLeft linear 2s;
+    
+}

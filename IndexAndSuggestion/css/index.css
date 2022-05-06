@@ -1,0 +1,35 @@
+body{
+	padding-top: 50px;
+}
+.row>.col-md-12>.carousel>.carousel-inner>.item>img{
+	width: 100%;
+}
+a:hover{
+	text-decoration: none;
+}
+.top{
+	margin-top: 25px;
+}
+/* 版权 */
+.banquan{
+	background-color: #080808;
+}
+.breadcrumb{
+	height: 18px;
+}
+.banquan>p{
+	color: #fff;
+}
+
+.floatleft{
+	float: left;
+}
+.floatright{
+	float: right
+}
+.font_sm{
+	font-size: 5px;
+}
+.magin_left{margin-left: 50px}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset { text-align: center }
+

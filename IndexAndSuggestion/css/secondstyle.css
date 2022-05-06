@@ -1,0 +1,25 @@
+/* 版权 */
+.banquan{
+	background-color: #080808;
+}
+.breadcrumb{
+	height: 18px;
+	background-color: #080808;
+}
+.banquan>p{
+	color: #fff;
+}
+/* 边距 */
+.magin-right20{
+	margin-right: 30px;
+}
+.magin-top20{
+	margin-top: 20px;
+}
+a:hover{
+	text-decoration: none;
+}
+.magin-rl20{
+	margin: 0 20px;
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset { text-align: center }
